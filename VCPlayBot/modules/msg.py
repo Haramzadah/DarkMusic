@@ -11,15 +11,15 @@ class Messages():
 f"""
 **Salam Bro 👋 Selamat datang kembali ke {PROJECT_NAME}
 
-⚪️ {PROJECT_NAME} can play music in your group's voice chat as well as channel voice chats
+⚪️ {PROJECT_NAME} dapat memutar musik di obrolan suara grup Anda serta obrolan suara saluran
 
-⚪️ Assistant name >> @{ASSISTANT_NAME}\n\nClick next for instructions**
+⚪️ Assistant name >> @{ASSISTANT_NAME}\n\nKlik berikutnya untuk petunjuk**
 
 Join @Update_Grouppp
 """,
 
 f"""
-**Setting up**
+**Pengaturan**
 
 1) Jadikan bot admin (Grup dan di saluran jika menggunakan cplay)
 2) Mulai obrolan suara
@@ -54,7 +54,7 @@ f"""
 - / saat ini: Menampilkan trek yang sedang diputar
 - /playlist: Menampilkan daftar putar
 
-*Player cmd and all other cmds except /play, /current  and /playlist  are only for admins of the group.
+*Player cmd dan semua cmd lainnya kecuali /play, /current  dan /playlist  hanya untuk admin grup.
 Join @Update_Grouppp
 """,
 
@@ -116,7 +116,7 @@ f"""
  - /userbotleaveall - hapus asisten dari semua obrolan
  - /broadcast <reply to message> - global brodcast membalas pesan ke semua obrolan
  - /pmpermit [on/off] - enable/disable pmpermit message
-*Sudo Users can execute any command in any groups
+*Pengguna Sudo dapat menjalankan perintah apa pun di grup mana pun
 Join @Update_Grouppp
 """
       ]
