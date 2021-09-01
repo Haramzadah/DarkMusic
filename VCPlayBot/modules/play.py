@@ -576,7 +576,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await lel.edit(
-                "Song not found.Try another song or maybe spell it properly."
+                "Lagu tidak ditemukan. Coba cari lagu lain atau mungkin mengejanya dengan benar"
             )
             print(str(e))
             return
@@ -622,7 +622,7 @@ async def play(_, message: Message):
           await lel.edit("Give me something to play")
         # Looks like hell. Aren't it?? FUCK OFF
         try:
-            toxxt = "**Select the song you want to play**\n\n"
+            toxxt = "**pilih lagu dengan judul yang anda inginkan**\n\n"
             j = 0
             useer=user_name
             emojilist = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣",]
@@ -669,7 +669,7 @@ async def play(_, message: Message):
 
             except Exception as e:
                 await lel.edit(
-                    "Song not found.Try another song or maybe spell it properly."
+                    "Lagu tidak ditemukan. Coba cari lagu lain atau mungkin mengejanya dengan benar."
                 )
                 print(str(e))
                 return
@@ -729,7 +729,7 @@ async def play(_, message: Message):
         try:
             await callsmusic.set_stream(chat_id, file_path)
         except:
-            message.reply("Group Call is not connected or I can't join it")
+            message.reply("Panggilan Grup tidak terhubung atau saya tidak dapat bergabung")
             return
         await message.reply_photo(
             photo="final.png",
@@ -827,7 +827,7 @@ async def ytplay(_, message: Message):
 
     except Exception as e:
         await lel.edit(
-            "Song not found.Try another song or maybe spell it properly."
+            "Lagu tidak ditemukan. Coba cari lagu lain atau mungkin mengejanya dengan benar."
         )
         print(str(e))
         return
@@ -887,7 +887,8 @@ async def ytplay(_, message: Message):
         try:
            await callsmusic.set_stream(chat_id, file_path)
         except:
-            message.reply("Group Call is not connected or I can't join it")
+            message.reply("Panggilan Grup tidak terhubung atau saya tidak dapat bergabung
+")
             return
         await message.reply_photo(
             photo="final.png",
