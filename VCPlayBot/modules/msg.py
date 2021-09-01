@@ -9,7 +9,7 @@ class Messages():
       HELP_MSG = [
         ".",
 f"""
-**Salam Bro 👋 Selamat datang kembali ke {PROJECT_NAME}
+**Salam Bro 👋 Selamat datang kembali di {PROJECT_NAME}
 
 ⚪️ {PROJECT_NAME} dapat memutar musik di obrolan suara grup Anda serta obrolan suara saluran
 
