@@ -1,9 +1,9 @@
 {
-  "name": "VCPlayBot",
+  "name": "Dark Music",
   "logo": "https://telegra.ph/file/7ffa8d18b9b7f1b51a81e.jpg",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/QueenArzoo/VCPlayBot",
+  "repository": "https://github.com/Haramzadah/DarkMusic",
   "stack": "container",
   "buildpacks": [
    {
@@ -31,12 +31,12 @@
     "SUPPORT_GROUP": {
       "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
       "required": false,
-      "value": "AwesomeSupport"
+      "value": "Update_Grouppp"
     },
     "PROJECT_NAME": {
       "description": "Your MusicPlayer project Name.",
       "required": false,
-      "value": "VCPlayBot2.0"
+      "value": "Kang zaen"
     },
     "ASSISTANT_NAME": {
       "description": "Your MusicPlayer's assistant Username without @.",
@@ -50,12 +50,12 @@
     "BG_IMAGE": {
       "description": "BG image of bot (Use transparent one) [IGNORE].",
       "required": false,
-      "value": "https://telegra.ph/file/9b13ea3ce046a1a5c8098.png"
+      "value": "https://telegra.ph/file/6106da47b3ee3885d6036.png"
     },     
     "UPDATES_CHANNEL": {
       "description": "Updates Channel without @ [Leave this if you don't have one].",
       "required": false,
-      "value": "LaylaList"
+      "value": "Musicdenzchannel"
     },    
     "API_ID": {
       "description": "App ID from my.telegram.org/apps",
