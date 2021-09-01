@@ -241,7 +241,7 @@ async def hfmm(_, message):
         return
     if len(message.command) != 2:
         await message.reply_text(
-            "I only recognize `/musicplayer on` and /musicplayer `off only`"
+            "Saya hanya mengenali `/musicplayer on` dan /musicplayer `off only`"
         )
         return
     status = message.text.split(None, 1)[1]
@@ -249,26 +249,26 @@ async def hfmm(_, message):
     if status == "ON" or status == "on" or status == "On":
         lel = await message.reply("`Processing...`")
         if not message.chat.id in DISABLED_GROUPS:
-            await lel.edit("Music Player Already Activated In This Chat")
+            await lel.edit("Pemutar Musik Sudah Diaktifkan Di Obrolan Ini")
             return
         DISABLED_GROUPS.remove(message.chat.id)
         await lel.edit(
-            f"Music Player Successfully Enabled For Users In The Chat {message.chat.id}"
+            f"Pemutar Musik Berhasil Diaktifkan Untuk Pengguna Dalam Obrolan {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await message.reply("`Processing...`")
         
         if message.chat.id in DISABLED_GROUPS:
-            await lel.edit("Music Player Already turned off In This Chat")
+            await lel.edit("Pemutar Musik Sudah dimatikan Dalam Obrolan Ini")
             return
         DISABLED_GROUPS.append(message.chat.id)
         await lel.edit(
-            f"Music Player Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"Pemutar Musik Berhasil Dinonaktifkan Untuk Pengguna Dalam Obrolan {message.chat.id}"
         )
     else:
         await message.reply_text(
-            "I only recognize `/musicplayer on` and /musicplayer `off only`"
+            "Saya hanya mengenali `/musicplayer on` dan /musicplayer `off only`"
         )    
         
 
