@@ -241,7 +241,7 @@ async def hfmm(_, message):
         return
     if len(message.command) != 2:
         await message.reply_text(
-            "Saya hanya mengenali `/musicplayer on` dan /musicplayer `off only`"
+            "I only recognize `/musicplayer on` and /musicplayer `off only`"
         )
         return
     status = message.text.split(None, 1)[1]
@@ -249,26 +249,26 @@ async def hfmm(_, message):
     if status == "ON" or status == "on" or status == "On":
         lel = await message.reply("`Processing...`")
         if not message.chat.id in DISABLED_GROUPS:
-            await lel.edit("Pemutar Musik Sudah Diaktifkan Di Obrolan Ini")
+            await lel.edit("Music Player Already Activated In This Chat")
             return
         DISABLED_GROUPS.remove(message.chat.id)
         await lel.edit(
-            f"Pemutar Musik Berhasil Diaktifkan Untuk Pengguna Dalam Obrolan {message.chat.id}"
+            f"Music Player Successfully Enabled For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await message.reply("`Processing...`")
         
         if message.chat.id in DISABLED_GROUPS:
-            await lel.edit("Pemutar Musik Sudah dimatikan Dalam Obrolan Ini")
+            await lel.edit("Music Player Already turned off In This Chat")
             return
         DISABLED_GROUPS.append(message.chat.id)
         await lel.edit(
-            f"Pemutar Musik Berhasil Dinonaktifkan Untuk Pengguna Dalam Obrolan {message.chat.id}"
+            f"Music Player Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
     else:
         await message.reply_text(
-            "Saya hanya mengenali `/musicplayer on` dan /musicplayer `off only`"
+            "I only recognize `/musicplayer on` and /musicplayer `off only`"
         )    
         
 
@@ -576,7 +576,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await lel.edit(
-                "Lagu tidak ditemukan. Coba cari lagu lain atau mungkin mengejanya dengan benar"
+                "Song not found.Try another song or maybe spell it properly."
             )
             print(str(e))
             return
@@ -622,7 +622,7 @@ async def play(_, message: Message):
           await lel.edit("Give me something to play")
         # Looks like hell. Aren't it?? FUCK OFF
         try:
-            toxxt = "**pilih lagu dengan judul yang anda inginkan**\n\n"
+            toxxt = "**Select the song you want to play**\n\n"
             j = 0
             useer=user_name
             emojilist = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣",]
@@ -669,7 +669,7 @@ async def play(_, message: Message):
 
             except Exception as e:
                 await lel.edit(
-                    "Lagu tidak ditemukan. Coba cari lagu lain atau mungkin mengejanya dengan benar."
+                    "Song not found.Try another song or maybe spell it properly."
                 )
                 print(str(e))
                 return
@@ -729,7 +729,7 @@ async def play(_, message: Message):
         try:
             await callsmusic.set_stream(chat_id, file_path)
         except:
-            message.reply("Panggilan Grup tidak terhubung atau saya tidak dapat bergabung")
+            message.reply("Group Call is not connected or I can't join it")
             return
         await message.reply_photo(
             photo="final.png",
@@ -827,7 +827,7 @@ async def ytplay(_, message: Message):
 
     except Exception as e:
         await lel.edit(
-            "Lagu tidak ditemukan. Coba cari lagu lain atau mungkin mengejanya dengan benar."
+            "Song not found.Try another song or maybe spell it properly."
         )
         print(str(e))
         return
@@ -887,8 +887,7 @@ async def ytplay(_, message: Message):
         try:
            await callsmusic.set_stream(chat_id, file_path)
         except:
-            message.reply("Panggilan Grup tidak terhubung atau saya tidak dapat bergabung
-")
+            message.reply("Group Call is not connected or I can't join it")
             return
         await message.reply_photo(
             photo="final.png",
@@ -1061,7 +1060,7 @@ async def lol_cb(b, cb):
     if cb.from_user.id != useer_id:
         await cb.answer("You ain't the person who requested to play the song!", show_alert=True)
         return
-    await cb.message.edit("Sabar... Dong lol")
+    await cb.message.edit("Hang On... Player Starting")
     x=int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
