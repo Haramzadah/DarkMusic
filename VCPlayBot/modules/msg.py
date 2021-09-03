@@ -5,7 +5,7 @@ from VCPlayBot.config import PROJECT_NAME
 from VCPlayBot.config import SUPPORT_GROUP
 from VCPlayBot.config import UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**salam bro 👋 [{}](tg://user?id={})!**\n\n👳 Saya adalah bot canggih yang dibuat untuk memutar musik di obrolan suara Grup & Saluran Telegram.\n\n✅ Send me /help for more info.\n\n Join @Update_Grouppp"
+      START_MSG = "**salam bro 👋 [{}](tg://user?id={})!**\n\n💀 Saya adalah bot canggih yang dibuat untuk memutar musik di obrolan suara Grup & Saluran Telegram.\n\n✅ Send me /help for more info.\n\n Join @Update_Grouppp"
       HELP_MSG = [
         ".",
 f"""
@@ -15,7 +15,6 @@ f"""
 
 ⚪️ Assistant name >> @{ASSISTANT_NAME}\n\nKlik berikutnya untuk petunjuk**
 
-Join @Update_Grouppp
 """,
 
 f"""
@@ -31,7 +30,6 @@ f"""
 2) Kirim /userbotjoinchannel di grup tertaut
 3) Sekarang kirim perintah di grup tertaut
 
-Join @Update_Grouppp
 """,
 f"""
 **Commands**
@@ -55,7 +53,6 @@ f"""
 - /playlist: Menampilkan daftar putar
 
 *Player cmd dan semua cmd lainnya kecuali /play, /current  dan /playlist  hanya untuk admin grup.
-Join @Update_Grouppp
 """,
 
 f"""
@@ -84,7 +81,6 @@ saluran juga dapat digunakan sebagai pengganti c ( /cplay = /channelplay )
 4) Tambahkan @{ASSISTANT_NAME} ke saluran sebagai admin.
 5) Cukup kirim perintah di grup Anda. (ingat untuk menggunakan /ytplay sebagai gantinya /play)
 
-Join @Update_Grouppp
 """,
 
 f"""
@@ -107,7 +103,6 @@ f"""
 
 - /search [nama lagu]: Cari youtube untuk lagu
 - /lyrics [nama lagu]: Dapatkan lirik lagu
-Join @Update_Grouppp
 """,
 
 f"""
@@ -117,6 +112,5 @@ f"""
  - /broadcast <reply to message> - global brodcast membalas pesan ke semua obrolan
  - /pmpermit [on/off] - enable/disable pmpermit message
 *Pengguna Sudo dapat menjalankan perintah apa pun di grup mana pun
-Join @Update_Grouppp
 """
       ]
