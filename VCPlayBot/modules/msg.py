@@ -5,7 +5,7 @@ from VCPlayBot.config import PROJECT_NAME
 from VCPlayBot.config import SUPPORT_GROUP
 from VCPlayBot.config import UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**salam bro 👋 [{}](tg://user?id={})!**\n\n💀 Saya adalah bot canggih yang dibuat untuk memutar musik di obrolan suara Grup & Saluran Telegram.\n\n✅ Send me /help for more info.\n\n Join @Update_Grouppp"
+      START_MSG = "**salam bro 👋 [{}](tg://user?id={})!**\n\n🦍 Saya adalah bot canggih yang dibuat untuk memutar musik di obrolan suara Grup & Saluran Telegram.\n\n✅ cara menggunakan sya ketik /help"
       HELP_MSG = [
         ".",
 f"""
@@ -34,7 +34,7 @@ f"""
 f"""
 **Commands**
 
-**=>> Memutar Lagu 🎧**
+**=>> Memutar Lagu 🎤**
 
 - /play: Memutar lagu yang diminta
 - /play [yt url] : Memutar url yt yang diberikan
@@ -87,9 +87,8 @@ f"""
 **=>> Lebih banyak alat 🧑‍🔧**
 
 - /musicplayer [on/off]: Enable/Disable Music player
-- /admincache: Updates admin info of your group. Try if bot isn't recognize admin
-- /userbotjoin: Invite @{ASSISTANT_NAME} Userbot to your chat
-Join @Update_Grouppp
+- /admincache: Perbarui info admin grup Anda. Coba jika bot tidak mengenali admin
+- /userbotjoin: Undang @{ASSISTANT_NAME} Userbot ke obrolan Anda
 """,
 f"""
 **=>> Unduh Lagu🎶 **
@@ -99,7 +98,7 @@ f"""
 - /saavn [nama lagu]: Unduh lagu dari saavn
 - /deezer [nama lagu]: Unduh lagu dari deezer
 
-**=>> Alat pencari 📄**
+**=>> Alat pencari 🔍**
 
 - /search [nama lagu]: Cari youtube untuk lagu
 - /lyrics [nama lagu]: Dapatkan lirik lagu
