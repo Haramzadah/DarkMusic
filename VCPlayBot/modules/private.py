@@ -89,7 +89,7 @@ def map(pos):
             [InlineKeyboardButton("➕ Add me to your Group 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
             [InlineKeyboardButton(text = '📑 ᴜᴘᴅᴀᴛᴇꜱ', url=f"https://t.me/{UPDATES_CHANNEL}"),
              InlineKeyboardButton(text = '📝 ꜱᴜᴘᴘᴏʀᴛ', url=f"https://t.me/{SUPPORT_GROUP}")],
-            [InlineKeyboardButton(text = '👳 ᴅᴇᴘᴇʟᴏᴠᴇʀ 👳', url=f"https://t.me/zaenmad")],
+            [InlineKeyboardButton(text = '☣️ ᴅᴇᴘᴇʟᴏᴠᴇʀ ☣️', url=f"https://t.me/zaenmad")],
             [InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}")]
         ]
     else:
@@ -104,7 +104,7 @@ def map(pos):
 @Client.on_message(filters.command("help") & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
     await message.reply_text(
-        f"""**👳 Halo! Saya dapat memutar musik di obrolan suara grup & saluran telegram.**""",
+        f"""**☣️ Halo! Saya dapat memutar musik di obrolan suara grup & saluran telegram.**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
